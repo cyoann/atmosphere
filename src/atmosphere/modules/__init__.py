@@ -3,10 +3,12 @@ from typer import Typer
 from atmosphere.core.module import AtmosphereModule
 from atmosphere.modules.brightness import module as brightness_module
 from atmosphere.modules.volume import module as volume_module
+from atmosphere.modules.weather import module as weather_module
 
 __all__: list[str] = [
     "brightness_module",
     "volume_module",
+    "weather_module",
 ]
 
 
