@@ -1,0 +1,30 @@
+{
+    // Enable linting, formatting, and auto-imports
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "isort.check": true,
+    // Paths
+    "python.formatting.blackPath": ".venv/bin/black",
+    "python.linting.flake8Path": ".venv/bin/flake8",
+    "python.linting.mypyPath": ".venv/bin/mypy",
+    "python.linting.pylintPath": ".venv/bin/pylint",
+    "python.testing.pytestPath": ".venv/bin/pytest",
+    "isort.path": [
+        ".venv/bin/isort",
+    ],
+    // Arguments
+    "isort.args": [],
+    "python.linting.flake8Args": [],
+    "python.linting.mypyArgs": [],
+    "python.formatting.blackArgs": [],
+    "python.linting.pylintArgs": [],
+    "python.testing.pytestArgs": [],
+    // On Save
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+        "source.fixAll": true
+    },
+}
