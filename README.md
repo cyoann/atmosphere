@@ -29,8 +29,9 @@ It is only written for a personal use case, but feel free to use it if you want.
 
 ## Features
 
-- [x] Manage your computer's brightness
+- [x] Manage your computer's brightness using `light`
 - [x] Manage your computer's volume using `pamixer`
+- [x] Fetch weather information from [wttr.in](https://wttr.in)
 - [x] Notify changes with `dunstify`
 
 ## Installation
@@ -57,16 +58,18 @@ pip3 install -r requirements.txt
 ### CLI
 
 ```bash
-.venv/bin/python3 src/atmosphere/cli.py --help
+$ .venv/bin/python3 src/atmosphere/cli.py --help
 ```
-
 
 ## Acknowledgments
 
-- [pamixer](https://github.com/cdemoulins/pamixer)
-- [dunst](https://dunst-project.org/)
-- [click](https://click.palletsprojects.com/)
-- [typer](https://typer.tiangolo.com/)
+- [pamixer](https://github.com/cdemoulins/pamixer) - pulseaudio mixer
+- [dunst](https://dunst-project.org/) - notification daemon
+- [click](https://click.palletsprojects.com/) - CLI framework
+- [typer](https://typer.tiangolo.com/) - CLI framework built on top of click
+- [requests](https://requests.readthedocs.io/) - HTTP library
+- [wttr.in](https://wttr.in) - weather service
+- [light](https://github.com/haikarainen/light) - brightness manager
 
 ## License
 
